@@ -1,0 +1,29 @@
+[
+  {
+    "id": "deny-ssh",
+    "source": "0.0.0.0/0",
+    "ports": [
+      22
+    ],
+    "action": "deny",
+    "protocol": "tcp"
+  },
+  {
+    "id": "allow-office",
+    "source": "192.0.2.0/24",
+    "ports": [
+      22
+    ],
+    "action": "allow",
+    "protocol": "tcp"
+  },
+  {
+    "id": "public-db",
+    "source": "::/0",
+    "ports": [
+      5432
+    ],
+    "action": "allow",
+    "protocol": "tcp"
+  }
+]

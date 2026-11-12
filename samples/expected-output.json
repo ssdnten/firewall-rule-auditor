@@ -1,0 +1,14 @@
+[
+  {
+    "rule": "allow-office",
+    "kind": "shadowed",
+    "by": "deny-ssh"
+  },
+  {
+    "rule": "public-db",
+    "kind": "internet_admin_exposure",
+    "ports": [
+      5432
+    ]
+  }
+]
